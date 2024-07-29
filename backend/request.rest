@@ -1,0 +1,45 @@
+
+post http://localhost:3000/user/register
+Content-Type: application/json
+
+{
+  "username":"user1",
+  "pwd":"143"
+}
+
+###
+GET http://localhost:3000/user/signout
+Authorization:bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Njg2NmQxNGJlMWIzZDYwNmM5YWFkM2IiLCJpYXQiOjE3MjAxMDA2OTgsImV4cCI6MTcyMDEwMjQ5OH0.rPvOmxo-b6WGFr7OC1C435aVg5TtviqaApru88oj7UM
+
+###
+GET http://localhost:3000/user/refresh
+
+###
+post http://localhost:3000/user/login
+Content-Type: application/json
+
+{
+  "username":"user1",
+  "password":"143"
+}
+
+###
+POST http://localhost:3000/incomes
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Njg2NmQxNGJlMWIzZDYwNmM5YWFkM2IiLCJpYXQiOjE3MjA2NjgyOTgsImV4cCI6MTcyMDY3MDA5OH0.t8Ma0Gau10DFrD8T_KlHFEv01JsueU4B9BuGV_VSP6k
+
+{
+  "user":"66866d14be1b3d606c9aad3b",
+  "title":"return",
+  "amount":6000,
+  "date":"2017-08-02",
+  "category":"BitCoin",
+  "description":"got the return"
+}
+
+###
+GET http://localhost:3000/incomes
+Authorization:bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Njg2NmQxNGJlMWIzZDYwNmM5YWFkM2IiLCJpYXQiOjE3MjA2NjgyOTgsImV4cCI6MTcyMDY3MDA5OH0.t8Ma0Gau10DFrD8T_KlHFEv01JsueU4B9BuGV_VSP6k
+
+###
+DELETE http://localhost:3000/incomes
