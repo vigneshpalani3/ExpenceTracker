@@ -8,7 +8,7 @@
   --bg-clr:rgb(231, 223, 240);
 }
 .home{
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 body{
   background-color: hsl(269, 22%, 55%);
@@ -406,6 +406,43 @@ textarea{
   }
 }
 
+.user-form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+
+.user-form{
+  background-color:rgb(216, 211, 223);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width:clamp(280px,70%,350px);
+  gap: 0.5rem;
+  & > input{
+    padding: 0.6rem;
+    outline:none;
+    border-radius: 0.5rem;
+    border: 1px solid hsl(270, 36%, 24%);
+    color: hsl(271, 54%, 11%);
+  }
+  & button{
+    padding: 0.6rem;
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: hsl(279, 62%, 35%);
+    color:rgb(217, 207, 229);
+    font-weight: 500;
+  }
+  & a{
+    text-decoration: none;
+    color: rgb(45, 45, 171);
+    font-size: 0.9rem;
+  }
+}
 
 @media (min-width:800px){
   .dashboard{
@@ -434,7 +471,8 @@ textarea{
   }
   .dash-head{
     grid-area: head;
-    line-height: 30px;
+    display: flex;
+    align-items:center;
   }
   .transaction-container{
     grid-template-columns:300px 1fr;
