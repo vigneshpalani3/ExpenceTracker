@@ -15,7 +15,7 @@ const actions = {
   ERROR:'ERROR'
 }
 
-const baseUrl = 'http://localhost:3000'
+const baseUrl = 'https://expencetracker-backend.onrender.com'
 
 export const GlobalContextProvider = ({children}) => {
   
