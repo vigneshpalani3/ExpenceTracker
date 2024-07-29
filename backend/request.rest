@@ -12,7 +12,7 @@ GET http://localhost:3000/user/signout
 Authorization:bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Njg2NmQxNGJlMWIzZDYwNmM5YWFkM2IiLCJpYXQiOjE3MjAxMDA2OTgsImV4cCI6MTcyMDEwMjQ5OH0.rPvOmxo-b6WGFr7OC1C435aVg5TtviqaApru88oj7UM
 
 ###
-GET http://localhost:3000/user/refresh
+GET http://localhost:3000/user
 
 ###
 post http://localhost:3000/user/login
