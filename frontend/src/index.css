@@ -211,7 +211,7 @@ textarea{
     position: fixed;
     top:0;
     right: 0;
-    height: 100vh;
+    height: 100dvh;
     height: -webkit-fill-available;
     transform: translateX(300px);
     transition: transform 0.3s ease-out;
